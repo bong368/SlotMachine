@@ -1,0 +1,35 @@
+{
+  "name": "SlotMachine",
+  "description": "",
+  "scripts": {
+  },
+  "env": {
+    "HEROKU_PHP_PLATFORM_REPOSITORIES": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+    "blackfire",
+    "cleardb",
+    "jawsdb",
+    "pubnub",
+    "pusher",
+    "scrapetastic"
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-php"
+    },
+    {
+      "url": "heroku/php"
+    },
+    {
+      "url": "heroku/php"
+    },
+    {
+      "url": "https://github.com/bong368/Slot"
+    }
+  ]
+}
